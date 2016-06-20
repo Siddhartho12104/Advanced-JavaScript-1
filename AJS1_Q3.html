@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced JS 1 Q3</title>
+</head>
+<body>
+
+
+<center>
+
+	<form onsubmit="return callme()">
+		
+		<br>
+		Name :  <input type="text" id="t1" placeholder="Name" required> <br>
+		Email :  <input type="text" id="t2" placeholder="Email ID" onblur="(function(id)
+{
+	var is_arate = false;
+	var is_dot = false;
+	var email = document.getElementById(id).value;
+	for( i in email )
+	{
+		if( email[i] == '@')
+		{
+			is_arate=true;
+		}
+		if( email[i] == '.')
+		{
+			is_dot=true;
+		}
+	}
+	if(!( is_arate && is_dot))
+		alert('ERROR: Enter a valid email ID ')
+})('t2')" required> <br>
+		Phone :  <input type="text" id="t3" placeholder="Phone Number:" required> <br>
+		Address : <input type="text" id="t4"> <br>
+		<br>
+		<input type="submit" value="submit">
+
+	</form>
+
+</center>	
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced JS 1 Q2</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            var output = (function(email){
+                            var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                            return reg.test(email);
+                        })('myemail@gmail.com');
+            document.write(output);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
