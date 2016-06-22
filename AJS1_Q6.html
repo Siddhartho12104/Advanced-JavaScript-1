@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced JavaScript 1 Q6</title>
+	
+	<script type="text/javascript">
+			function Person(fname,lname,email,phone){ 
+				  this.fname = fname; 
+				  this.lname = lname; 
+				  this.email = email;
+				  this.phone = phone;
+				}
+					function info(){
+						var p1=new Person('Siddhartho','Das','sid@gmail.com','9191919191');
+						document.getElementById("fname").innerHTML = p1.fname ;
+						document.getElementById("lname").innerHTML = p1.lname ;
+						document.getElementById("email").innerHTML = p1.email ;
+						document.getElementById("phone").innerHTML = p1.phone;
+							
+			
+		}
+	    </script>
+</head>
+<body><h1><center>Person Details</center></h1>
+FirstName : <p id="fname"></p>	
+LastName : <p id ="lname"></p>
+Email ID : <p id ="email"></p>
+Phone No:: <p id = "phone"></p>
+<button onclick="info()"> Click </button>
+</body>
+</html>
